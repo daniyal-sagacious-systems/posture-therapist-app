@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 50px 20px;
+}
+
+.header {
+	/* text-align: center; */
+	margin-bottom: 50px;
+}
+
+.bill-to {
+	margin-bottom: 30px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 30px;
+    
+}
+
+th, td {
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.th {
+	background-color:#454545;
+    color:white
+}
+
+.total {
+	text-align: right;
+	display: flex;
+	justify-content: flex-end;
+	align-items: start;
+}
+.MainContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.InvoiceContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@media only screen and (max-width: 600px) {
+	.container {
+		padding: 50px 10px;
+	}
+	
+	h1 {
+		font-size: 24px;
+	}
+	
+	table {
+		font-size: 14px;
+	}
+	
+	th, td {
+		padding: 5px;
+	}
+	
+	.total {
+		text-align: left;
+	}
+}

@@ -1,0 +1,16 @@
+
+
+
+.fc-bg-event{
+
+  border: solid 2px;
+  border-color: darkgreen;
+  font-weight: 600;
+  color: black;
+  
+}
+
+
+:root{
+--fc-bg-event-opacity: 1;
+}
