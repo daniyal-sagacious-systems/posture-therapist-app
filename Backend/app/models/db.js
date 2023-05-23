@@ -12,13 +12,13 @@ connection.getConnection((err, connection) => {
   
   if (err) throw err;
   
-  var sql = "CREATE TABLE IF NOT EXISTS patients (id int NOT NULL AUTO_INCREMENT, first_name VARCHAR(255), middle_name VARCHAR(255), surname VARCHAR(255), date_of_birth date, age VARCHAR(255), gender VARCHAR(255), address VARCHAR(255), mobile_no VARCHAR(255), email VARCHAR(255), occupation VARCHAR(255), designation VARCHAR(255), ";
-  sql += "physiotherapist_seen_before TINYINT(1), patient_concerns_for_previous_physiotherapist VARCHAR(255), patient_satisfactions_for_previous_physiotherapist VARCHAR(255))"
+  // var sql = "CREATE TABLE IF NOT EXISTS patients (id int NOT NULL AUTO_INCREMENT, first_name VARCHAR(255), middle_name VARCHAR(255), surname VARCHAR(255), date_of_birth date, age VARCHAR(255), gender VARCHAR(255), address VARCHAR(255), mobile_no VARCHAR(255), email VARCHAR(255), occupation VARCHAR(255), designation VARCHAR(255), ";
+  // sql += "physiotherapist_seen_before TINYINT(1), patient_concerns_for_previous_physiotherapist VARCHAR(255), patient_satisfactions_for_previous_physiotherapist VARCHAR(255))"
   
-  connection.query(sql, function (err, result) {
-    if (err) throw err;
-    console.log("Table created");
-  });
+  // connection.query(sql, function (err, result) {
+  //   if (err) throw err;
+  //   console.log("Table created");
+  // });
   
   // Database related queries here ...
   // It means:             query 1
