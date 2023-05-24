@@ -25,6 +25,6 @@ module.exports = app => {
   // Delete all Tutorials
   router.delete("/", invoice.deleteAll);
 
-  app.use('/api/invoice', router);
+  app.use('\netlify\functions\api\invoice', router);
 
 };

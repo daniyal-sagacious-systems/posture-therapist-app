@@ -14,6 +14,7 @@ var corsOptions = {
   origin: ["http://localhost:8081", "https://posture-therapist.netlify.app/" ]
 };
 
+
 app.use(cors());
 app.use(fileUpload());
 app.use(express.static('FileSystem'));
@@ -55,15 +56,17 @@ app.use(express.json()); /* bodyParser.json() is deprecated */
 
 
 
-require("./app/routes/patient_visit.routes.js")(app);
-require("./app/routes/patient.routes.js")(app);
-require("./app/routes/user.routes.js")(app);
-require("./app/routes/auth.routes.js")(app);
-require("./app/routes/disease.routes.js")(app);
-require("./app/routes/doctor_time_slots.routes.js")(app);
-require("./app/routes/scheduled_appointments.routes.js")(app);
-require("./app/routes/services.routes.js")(app);
-require("./app/routes/invoice.routes.js")(app);
+require("../app/routes/patient_visit.routes.js")(app);
+require("../app/routes/patient.routes.js")(app);
+require("../app/routes/user.routes.js")(app);
+require("../app/routes/auth.routes.js")(app);
+require("../app/routes/disease.routes.js")(app);
+require("../app/routes/doctor_time_slots.routes.js")(app);
+require("../app/routes/scheduled_appointments.routes.js")(app);
+require("../app/routes/services.routes.js")(app);
+require("../app/routes/invoice.routes.js")(app);
+
+
 
 
 // set port, listen for requests

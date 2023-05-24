@@ -10,6 +10,6 @@ module.exports = app =>{
   router.delete('/:id',services.delete);
   router.delete('/:id',services.deleteAll);
 
-  app.use('/api/services',router)
+  app.use('\netlify\functions\api\services',router)
 };
 

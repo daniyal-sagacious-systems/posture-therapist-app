@@ -25,6 +25,6 @@ module.exports = app => {
   // Delete all Tutorials
   router.delete("/", patient_visit.deleteAll);
 
-  app.use('/api/patientvisits', router);
+  app.use('\netlify\functions\api\patientvisits', router);
   
 };

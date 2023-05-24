@@ -24,6 +24,6 @@ module.exports = app => {
     // Delete all Tutorials
     router.delete("/", auth.deleteAll);
   
-    app.use('/api/auth', router);
+    app.use('\netlify\functions\api/auth', router);
   };
   

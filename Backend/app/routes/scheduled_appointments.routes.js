@@ -28,5 +28,5 @@ module.exports = app => {
   // Delete all Tutorials
   router.delete("/", scheduled_appointments.deleteAll);
 
-  app.use('/api/scheduledappointments', router);
+  app.use('\netlify\functions\api\scheduledappointments', router);
 };
